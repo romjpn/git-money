@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/Vazir.eot?v=2-RC6');
+  src: url('../fonts/Vazir.eot?v=2-RC6#iefix') format('embedded-opentype'),
+       url('../fonts/Vazir.woff?v=2-RC6') format('woff'),
+       url('../fonts/Vazir.ttf?v=2-RC6') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/Vazir-Bold.eot?v=2-RC6');
+  src: url('../fonts/Vazir-Bold.eot?v=2-RC6#iefix') format('embedded-opentype'),
+       url('../fonts/Vazir-Bold.woff?v=2-RC6') format('woff'),
+       url('../fonts/Vazir-Bold.ttf?v=2-RC6') format('truetype');
+  font-weight: bold;
+}
+
+h1, h2, body{
+    direction: rtl;
+    font-family: Vazir, tahoma;
+}
+
+h1 {
+    font-size: 3.50rem;
+}
+
