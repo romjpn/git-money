@@ -39,7 +39,7 @@ class github(object):
         passphrase = hashlib.sha256(repository_path_encode + issue_title_encode).hexdigest()
         print('Passphrase: ' + passphrase)
         print(type(passphrase))
-        multisig_wallet.create_wallet(issue_title, passphrase)
+        multisig_wallet.create_instant_wallet(issue_title, passphrase)
         print('Wallet create')
         bounty_address = multisig_wallet.generate_address(str(issue_title))
         print('Bounty address created')

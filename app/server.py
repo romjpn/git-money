@@ -96,7 +96,7 @@ def index():
                 repository_path_encode = repository_path.encode('utf-8')
                 issue_title_encode = issue_title.encode('utf-8')
                 passphrase = hashlib.sha256(repository_path_encode + issue_title_encode).hexdigest()
-                multisig_wallet.send_bitcoin_simple(walletId, str(addresses), amount, passphrase)
+                multisig_wallet.send_bitcoin_simple_instant(walletId, str(addresses), amount, passphrase)
 
                 # Set up sending of the tweet
                 
