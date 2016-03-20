@@ -33,7 +33,8 @@ DEEP COLOR CODE: #be2a2a
 }
 
 .colored-line,
-.colored-line-left {
+.colored-line-left,
+.colored-line-right {
     background: #f25454;
 }
 
