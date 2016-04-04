@@ -1,5 +1,5 @@
 /* =================================
-   LOADER                     
+   LOADER
 =================================== */
 // makes sure the whole site is loaded
 jQuery(window).load(function() {
@@ -22,17 +22,17 @@ $(".video-container").fitVids();
 
 $('.mailchimp').ajaxChimp({
     callback: mailchimpCallback,
-    url: "http://webdesign7.us6.list-manage.com/subscribe/post?u=9445a2e155b82208d73433060&amp;id=16dc80e353" //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".  
+    url: "http://webdesign7.us6.list-manage.com/subscribe/post?u=9445a2e155b82208d73433060&amp;id=16dc80e353" //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
 });
 
 function mailchimpCallback(resp) {
      if (resp.result === 'success') {
         $('.subscription-success').html('<i class="icon_check_alt2"></i><br/>' + resp.msg).fadeIn(1000);
         $('.subscription-error').fadeOut(500);
-        
+
     } else if(resp.result === 'error') {
         $('.subscription-error').html('<i class="icon_close_alt2"></i><br/>' + resp.msg).fadeIn(1000);
-    }  
+    }
 }
 
 
@@ -46,7 +46,7 @@ $(document).ready(function() {
     filter: ':not(.external)',
     changeHash: true
   });
-  
+
 });
 
 
@@ -103,8 +103,8 @@ jQuery(function( $ ){
 =================================== */
 function alturaMaxima() {
   var altura = $(window).height();
-  $(".full-screen").css('min-height',altura); 
-  
+  $(".full-screen").css('min-height',altura);
+
 }
 
 $(document).ready(function() {
@@ -259,8 +259,8 @@ $('.expand-form').simpleexpand({
 /* =================================
 ===  STELLAR                    ====
 =================================== */
-$(window).stellar({ 
-horizontalScrolling: false 
+$(window).stellar({
+horizontalScrolling: false
 });
 
 
@@ -287,4 +287,54 @@ $(document).ready(function(){
         window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
         return false;
     });
+});
+
+/* =================================
+===  Issue List                 ====
+=================================== */
+
+// Make Github api data friendly for DataTables
+const parseIssueData = function(data){
+	var parsedData = [];
+	for(var i in data){ parsedData.push(data[i]) }
+	return parsedData;
+}
+
+// Get the Btc bounty of the issue
+const parseBtcBounty = function(str){
+	var found = str.match(/(\d.*)(\s(satoshis|bits))/g);
+	return found? found[0] : '';
+}
+
+const renderDatatable = function(data){
+	$('#issues-table').DataTable({
+		searching: false,
+		bLengthChange: false,
+		data: parseIssueData(data),
+		columns: [
+			{
+				data: 'url',
+				fnCreatedCell: function (nTd, sData, oData, iRow, iCol) {
+					$(nTd).html(`<a target="_blank" href='${oData.html_url}'>${oData.title}</a>`);
+				},
+			},
+			{
+				data: 'body',
+				render: function ( data, type, row ) {
+					return parseBtcBounty(data);
+				}
+			}
+		]
+	});
+}
+
+// Run Ajax request for Github issues when we're ready to go.
+$(document).ready(function(){
+		const apiUrl = 'https://api.github.com/repos/21hackers/git-money/issues?state=open&labels=git%20money';
+		// TODO: Implement Header Conditional to prevent 60 req/hour API limit
+		// 			 Would require using cookie to keep track of ETAG header in response
+		// 			 see: https://developer.github.com/v3/#conditional-requests
+		$.get(apiUrl, function(res, status, xhr){
+			renderDatatable(res);
+		});
 });
