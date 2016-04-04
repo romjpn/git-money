@@ -1,3 +1,5 @@
+Love Git'n Money? [Donate](https://live.blockcypher.com/btc/address/3H1YSG26mhENqQMG8hSrTNbaBnopWNNiNP) _All proceeds will go to bounties_
+
 # Why Git Money?
 
 Because something's not right in the world. All you need to do is turn on your

@@ -2,21 +2,22 @@
 <html lang="en" itemscope itemtype="http://schema.org/Organization">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="Use Git Money to work from anywhere by getting paid for your pull requests.">
+
+<meta name="description" content="Git para ile istediğin yerden çalış, pull request'lerin için ödeme al.">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- Open Graph Meta Data -->
 <meta property="og:url" content="http://gitmoney.io/" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Git Money - Work from anywhere" />
-<meta property="og:description" content="Use git money and get paid for all of your pull requests." />
-<meta property="og:image" content="http://gitmoney.io/public/images/apple-touch-icon-114x114.png" />
-<meta itemprop="name" content="Git Money - Work from anywhere.">
-<meta itemprop="description" content="Use git money and get paid for all of your pull requests.">
-<meta itemprop="image" content="http://gitmoney.io/public/images/apple-touch-icon-114x114.png">
+<meta property="og:title" content="Git Para - İstediğin yerden çalış." />
+<meta property="og:description" content="Git para ile istediğin yerden çalış, pull request'lerin için ödeme al." />
+<meta property="og:image" content="http://gitmoney.io/images/apple-touch-icon-114x114.png" />
+<meta itemprop="name" content="Git Para - İstediğin yerden çalış.">
+<meta itemprop="description" content="Git para ile istediğin yerden çalış, pull request'lerin için ödeme al.">
+<meta itemprop="image" content="http://gitmoney.io/images/apple-touch-icon-114x114.png">
 
 <!-- SITE TITLE -->
-<title>Git Money - Work from anywhere</title>
+<title>Git Para - İstediğin yerden çalış.</title>
 
 <!-- =========================
       FAV AND TOUCH ICONS
@@ -30,7 +31,7 @@
      STYLESHEETS
 ============================== -->
 <!-- BOOTSTRAP -->
-<link rel="stylesheet" href="public/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 
 <!-- FONT ICONS -->
 <link rel="stylesheet" href="public/assets/elegant-icons/style.css">
@@ -41,25 +42,23 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
 
 <!-- CAROUSEL AND LIGHTBOX -->
-<link rel="stylesheet" href="public/css/owl.theme.css">
-<link rel="stylesheet" href="public/css/owl.carousel.css">
-<link rel="stylesheet" href="public/css/nivo-lightbox.css">
-<link rel="stylesheet" href="public/css/nivo_themes/default/default.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
 
 <!-- ANIMATIONS -->
-<link rel="stylesheet" href="public/css/animate.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
 
 <!-- CUSTOM STYLESHEETS -->
-<link rel="stylesheet" href="public/css/styles.css">
+<link rel="stylesheet" href="css/styles.css">
 
 <!-- COLORS -->
-<link rel="stylesheet" href="public/css/colors/green.css">
+<link rel="stylesheet" href="css/colors/green.css">
 
 <!-- RESPONSIVE FIXES -->
-<link rel="stylesheet" href="public/css/responsive.css">
+<link rel="stylesheet" href="css/responsive.css">
 
-<!-- DATATABLE -->
-<link rel="stylesheet" href="public/css/datatables.css">
 
 <!--[if lt IE 9]>
 			<script src="public/js/html5shiv.js"></script>
@@ -88,7 +87,7 @@
 
 				<!-- LOGO ON STICKY NAV BAR -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
-				<span class="sr-only">Toggle navigation</span>
+				<span class="sr-only">Nagivasyon Aç/Kapa</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -102,11 +101,11 @@
 			<!-- NAVIGATION LINKS -->
 			<div class="navbar-collapse collapse" id="kane-navigation">
 				<ul class="nav navbar-nav navbar-right main-navigation">
-					<li><a href="#why">Why?</a></li>
-					<li><a href="#brief1">Features</a></li>
-					<li><a href="#brief2">Free Market</a></li>
-					<li><a href="#services">How it Works</a></li>
-					<li><a href="#bounties">Getting Started</a></li>
+					<li><a href="#brief1">Özellikler</a></li>
+					<li><a href="#brief2">Serbest Pazar</a></li>
+					<li><a href="#services">Nasıl Çalışıyor</a></li>
+					<li><a href="#screenshot-section">Başlangıç</a></li>
+					<li><a href="#download">Git Para'ı Forkla</a></li>
 				</ul>
 			</div>
 		</div> <!-- /END CONTAINER -->
@@ -131,18 +130,16 @@
 
 				<!-- HEADING AND BUTTONS -->
 				<div class="intro-section">
-				<!-- WELCOME MESSAGE -->
-					<h1 class="intro">Work from anywhere.</h1>
-          <h2><iframe
-            src="https://ghbtns.com/github-btn.html?user=21hackers&repo=git-money&type=star&count=true&size=large"
-            frameborder="0" scrolling="0" width="132px"
-            height="30px"></iframe></h2>
-					<h5>Use <strong>git money</strong> and get paid for all of your pull requests.</h5>
+
+					<!-- WELCOME MESSAGE -->
+					<h1 class="intro">Heryerden Çalış.</h1>
+					<h5>  <strong>git para</strong> kullan bütün pull request'lerin için ödemeler al.</h5>
 
 					<!-- BUTTON -->
 					<div class="buttons" id="download-button">
 
-						<a href="#why" class="btn btn-default btn-lg standard-button">WHY?</a>
+						<a href="#brief1" class="btn btn-default btn-lg standard-button">DAHA FAZLASI</a>
+
 					</div>
 					<!-- /END BUTTONS -->
 
@@ -161,46 +158,6 @@
 <!-- /END HEADER -->
 
 <!-- =========================
-     BRIEF INTRO SECTION
-============================== -->
-<section class="app-brief" id="why">
-
-<div class="container">
-
-	<div class="row">
-
-		<!-- BRIEF -->
-		<div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-
-			<!-- SECTION TITLE -->
-			<h2 class="white-text">Why Git Money?</h2>
-
-			<div class="colored-line-left">
-			</div>
-
-			<p>
-				Because something's not right in the world. All you need to do is turn on your television, open your web browser or read a newspaper. The world is bound to the will of a small few, who make decisions that aim to decide what's best for the rest of us - and it's not working. So far these decisions have resulted in wars, bailouts, inflation, and higher taxes. No doubt, there are many other negatives as well.</p>
-
-<p>And this is why a few of us have built Git Money. This is why we've chosen a different way. But why? Why choose a more difficult path instead of doing the other things? Why do people try to swim across the English Channel? Climb Mount Everest? Run towards danger when everyone else is running away? We choose this mantra and our currency as bitcoin, not because it is easy, <em>but because it is hard</em>.</p>
-
-<p>We've said it before and we'll say it again - it doesn't matter where you're from or who you are. We believe in the right to work anywhere on whatever you want. It doesn't matter your gender, your education, your social or spiritual beliefs or your skin color.</p>
-
-<p><strong>We are the Bitcoin Legion. Our home is the Earth and we work in the
-  Cloud - you are welcome to join us.</strong></p>
-
-		</div>
-		<!-- /ENDBRIEF -->
-
-	</div>
-	<!-- /END ROW -->
-
-</div>
-<!-- /END CONTAINER -->
-
-</section>
-<!-- /END SECTION -->
-
-<!-- =========================
      BRIEF LEFT SECTION
 ============================== -->
 <section class="app-brief deep-dark-bg" id="brief1">
@@ -213,21 +170,21 @@
 		<div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
 			<!-- SECTION TITLE -->
-			<h2 class="white-text">Choose what you want to work on.</h2>
+			<h2 class="white-text">Çalışmak istediğinizi seçin.</h2>
 
 			<div class="colored-line-left">
 			</div>
 
 			<p>
-				<strong>People have problems</strong> that need fixing. <strong>You have the expertise</strong> to solve them. This is your opportunity.
+				<strong>İnsanların problemleri var</strong> ve bunların çözülmesi gerekli. <strong>Uzmanlığınız'la bu sorunların</strong> hepsini çözmelisiniz. Bu bir fırsat.
 			</p>
 
 			<!-- FEATURE LIST -->
 			<ul class="feature-list">
-				<li><i class="icon_star"></i> Free market </li>
-				<li><i class="icon_cogs"></i> Automated payments </li>
-				<li><i class="icon_check"></i> Extremely low fees </li>
-				<li><i class="icon_heart"></i> Work from anywhere </li>
+				<li><i class="icon_star"></i> Serbest Pazar </li>
+				<li><i class="icon_cogs"></i> Otomatik Ödemeler </li>
+				<li><i class="icon_check"></i> Çok Düşük Ücretler </li>
+				<li><i class="icon_heart"></i> İstediğiniz Yerden Çalışma </li>
 			</ul>
 
 		</div>
@@ -256,13 +213,13 @@
 		<div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
 			<!-- SECTION TITLE -->
-			<h2 class="white-text">Let your work speak for itself.</h2>
+			<h2 class="white-text">İşiniz kendisi için konuşsun.</h2>
 
 			<div class="colored-line-left">
 			</div>
 
 			<p>
-				It shouldn’t matter where you are - the United States, Ukraine, an island, India or anywhere. If your code solves a problem, you should be paid. The quality of your work should be all that matters when providing a solution to a problem. With <strong>git money</strong>, your work is your resume. Nothing else matters.
+				Nerede olduğunuz önemli değil, Amerika Birleşik Devletleri,Ukrayna veya bir ada, Hindistan yada herhangi bir yer.Kod'lar da bulunan sorunları çözdüğünüz takdirde, size ödemeleriniz yapılacak.İşinizin kalitesi sorunu çözerken sunduğunuz her konuda olmalıdır.<strong>Git para </strong> sizin özgeçmişiniz sayılır.Başka konular önemli değildir.
 			</p>
 
 		</div>
@@ -291,13 +248,13 @@
 		<div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
 			<!-- SECTION TITLE -->
-			<h2 class="white-text">Not a coder? Not a problem.</h2>
+			<h2 class="white-text">Yazılımcı değil misiniz? Problem değil.</h2>
 
 			<div class="colored-line-left">
 			</div>
 
 			<p>
-				A problem doesn’t have to be technical. People have needs for graphics, text, video editing, social media assistance and many other things - and they're willing to pay for it. If you have a skill, <strong>there might be money waiting for you</strong>.
+				Bazen sorunlar teknik açıdan olmayabilir.İnsanların grafiklere, yazılara, video düzenlemelerine, sosyal medya konusunda yardımcı olmaya ve diğer birçok şeye  ödemede bulunabilirler.Eğer yetenekleriniz varsa, <strong> paranız sizi bekliyor olabilir</strong>.
 			</p>
 
 
@@ -324,12 +281,12 @@
 	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
 
 		<!-- SECTION TITLE -->
-		<h2 class="white-text">How it works</h2>
+		<h2 class="white-text">Nasıl Çalışıyor?</h2>
 
 		<div class="colored-line">
 		</div>
 		<div class="section-description">
-			Find a bitcoin-payable project and enjoy borderless commerce.
+			Bir bitcoin ödemesi yapabileceğiniz proje bulmak, ve sınırsız ticari zevk
 		</div>
 		<div class="colored-line">
 		</div>
@@ -348,15 +305,13 @@
 			</div>
 
 			<!-- SERVICE HEADING -->
-			<h3>git opportunities</h3>
+			<h3>git fırsatları</h3>
 
 			<!-- SERVICE DESCRIPTION -->
 			<p>
-        <a href="https://github.com/21hackers/git-money/issues?q=is%3Aissue+is%3Aopen+label%3A%22git+money%22" target="_blank">Browse current bitcoin-payable Issues on GitHub</a>. All Issues with a
-        payout will contain the green label git money along with a "<strong>Current
-          Payout:</strong>" when viewed. The current payout for resolving in the issue is
-        denoted in BTC (Bitcoin) and US Dollars. If you have a question about
-        the Issue, feel free to comment on it and ask! <a href="https://guides.github.com/activities/hello-world/" target="_blank">New to git?</a>
+	        <a href="https://github.com/21hackers/git-money/issues?q=is%3Aissue+is%3Aopen+label%3A%22git+money%22" target="_blank">Github üzerinde bitcoin ödemesi alabileceğiniz sorunları görüntüleyin</a>. Bütün sorunlar yeşil etikete sahip ödemeleri içeriyor, "<strong> Aktif Görevleri:</strong>" görüntüle.
+			Sorunların çözülmesi ile ödemeler BTC (bitcoin) ve Amerikan Doları ile yapılıyor.Sorunlar hakkında sormak istediğiniz sorular varsa sormaktan çekinmeyin!
+			<a href="https://guides.github.com/activities/hello-world/" target="_blank">Git'de yeni misiniz?</a>
 			</p>
 
 		</div>
@@ -371,15 +326,15 @@
 			</div>
 
 			<!-- SERVICE HEADING -->
-			<h3>git work</h3>
+			<h3>git çalışması</h3>
 
 			<!-- SERVICE DESCRIPTION -->
-			<p>
-        Once you've found an opportunity, you're halfway home (or wherever it is
-        you're going!). Go ahead and get to work! All you need to do is clone
-        the repo, create a branch, commit your changes and submit a pull
-        request. In your pull request message, <a href="https://github.com/blog/1506-closing-issues-via-pull-requests" target="_blank">make sure to note that it resolves the issue</a> and
-        also include your bitcoin address.
+			<p>Bir fırsat bulduğunuzda, belkide evinize gitmek üzereyken (yada herhangi bir yere giderken!).
+			Hemen çalışamalara başlayabilirsin! Bütün yapman gereken bulunan repo'u klonlaman yeni bir branch
+			oluşturman değişiklerini bir mesaj'da toplaman ve pull request'de bulunman.Pull request mesajın içerisinde
+			<a href="https://github.com/blog/1506-closing-issues-via-pull-requests" target="_blank">çözmüş olduğun sorunu notlara eklemen</a>
+			ve aynı şekilde bitcoin adresini eklemen gerekli.
+			 <a href="https://bitcoin.org/en/bitcoin-for-individuals" target="_blank">Bitcoin'de yeni misin </a>
 			</p>
 
 		</div>
@@ -394,15 +349,14 @@
 			</div>
 
 			<!-- SERVICE HEADING -->
-			<h3>git money</h3>
+			<h3>git para</h3>
 
 			<!-- SERVICE DESCRIPTION -->
-			<p>
-        Once your pull request is merged, you instantly get paid. However you
-        choose to git money is up to you. Some people look for small issues that
-        add up to larger sums. Others go straight for the big jobs. Maybe you're
-        middle of the road, picking and choosing to make extra money on the
-        side. It's completely up to you how you want to git money.
+			<p>Pull request'in kabul edildiğinde, otomatik olarak ödemen yapılmış olacak.
+				Bütün tercih sizin git para'ı seçmiş olmanıza kalmış durumda.
+				Bazı kişilerin küçük sorunlara bakması için belli miktarlar eklemelisiniz.
+				Diğer büyük işler için düzgün gitmesi önemli. Belki sen yolun ortasında ekstra olarak para kazanmak isteyebilirsin.
+				Bunların hepsi senin git para istemenize kalmış durumda.
 			</p>
 
 		</div>
@@ -417,59 +371,33 @@
 </section>
 <!-- /END FEATURES SECTION -->
 
+
+
 <!-- =========================
      BOUNTIES
 ============================== -->
-<section class="app-brief deep-dark-bg" id="bounties">
-
-<div class="container">
-
-	<div class="row">
-
-		<!-- RIGHT SIDE WITH BRIEF -->
-		<div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-
-			<!-- SECTION TITLE -->
-			<h2 class="white-text">The next stop is yours.</h2>
-
-			<div class="colored-line-left">
-			</div>
-			<p>
-				Browse some issues where you can git money.
-				<table id="issues-table" class="table table-striped table-bordered dataTable no-footer">
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Bounty</th>
-						</tr>
-					</thead>
-					<tbody>
-						<td>No issues found. You might also be hitting the Github API request limit, <a target="_blank" href="https://github.com/21hackers/git-money/issues?q=is%3Aissue+is%3Aopen+label%3A%22git+money%22">check the repository</a> directly.</td>
-						<td></td>
-					</tbody>
-				</table>
-			</p>
-
-
-		</div>
-		<!-- /END RIGHT BRIEF -->
-
-	</div>
-	<!-- /END ROW -->
-
-</div>
-<!-- /END CONTAINER -->
-
-</section>
-<!-- /END SECTION -->
-
-<!-- =========================
-     SCREENSHOTS
-============================== -->
-<!--
 <section class="screenshots deep-dark-bg" id="screenshot-section">
 
 <div class="container">
+
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+		<!-- SECTION TITLE -->
+		<h2 class="white-text">Bir sonraki durak sizindir.</h2>
+
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			<a href="https://github.com/21hackers/git-money/issues?q=is%3Aissue+is%3Aopen+label%3A%22git+money%22" target="_blank"><h3>Git Para kazanabileceğiniz birçok sorunu görüntüleyin. </h3></a>
+		</div>
+		<div class="colored-line">
+		</div>
+
+	</div>
+	<!-- /END SECTION HEADER -->
+
+  <!--
 	<div class="row wow bounceIn animated" data-wow-offset="10" data-wow-duration="1.5s">
 
 		<div id="screenshots" class="owl-carousel owl-theme">
@@ -489,9 +417,15 @@
 			<div class="shot">
 				<a href="https://github.com/schildbach/bitcoin-wallet/issues" target="_blank"><img src="public/images/screenshots/4.jpg" alt="Screenshot"></a>
 			</div>
+
 		</div>
+-->
+		<!-- /END SCREENSHOTS -->
+
 	</div>
-</div> -->
+	<!-- /END ROW -->
+
+</div>
 <!-- /END CONTAINER -->
 
 </section>
@@ -520,7 +454,7 @@
 
 	<!-- COPYRIGHT TEXT -->
 	<p class="copyright">
-		© 2016 gitmoney.io<br/><a href="https://21.co/buy/" target="_blank">Powered by a 21 Bitcoin Computer</a>.
+		© 2016 gitmoney.io<br/><a href="https://21.co/buy/" target="_blank">Hazırlayan by 21 Bitcoin Computer</a>.
 	</p>
 
 </div>
@@ -534,7 +468,6 @@
      SCRIPTS
 ============================== -->
 
-<script src="http://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
 <script src="public/js/bootstrap.min.js"></script>
 <script src="public/js/smoothscroll.js"></script>
 <script src="public/js/jquery.scrollTo.min.js"></script>

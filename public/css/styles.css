@@ -265,6 +265,13 @@ h5 {
     height: 1px;
 }
 
+.colored-line-right {
+    float: right;
+    z-index: 1;
+    display: block;
+    width: 165px;
+    height: 1px;
+}
 /*---------------------------------------
 =========================================
  **   SECTION STYLES                
@@ -445,17 +452,20 @@ header .intro-section .buttons {
     margin-bottom: 50px;
 }
 
-.app-brief .left-align p {
+.app-brief .left-align p,
+.app-brief .right-align p {
     display: block;
     float: none;
     margin-top: 50px;
 }
 
-.app-brief .left-align .feature-list {
+.app-brief .left-align .feature-list,
+.app-brief .right-align .feature-list {
     margin-top: 40px;
 }
 
-.app-brief .left-align .feature-list li {
+.app-brief .left-align .feature-list li,
+.app-brief .right-align .feature-list li {
     margin-bottom: 26px;
 }
 
@@ -464,6 +474,15 @@ header .intro-section .buttons {
     vertical-align: inherit;
 }
 
+.app-brief .right-align {
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.app-brief .right-align .feature-list li i {
+    margin-left: 10px;
+    vertical-align: inherit;
+}
 
 /* VIDEO */
 
